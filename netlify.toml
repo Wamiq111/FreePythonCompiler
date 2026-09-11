@@ -1,0 +1,44 @@
+[build]
+  # Netlify should serve the contents of the 'frontend' folder
+  publish = "frontend"
+
+[[redirects]]
+  from = "/html-compiler"
+  to = "/compiler.html"
+  status = 200
+
+[[redirects]]
+  from = "/python-compiler"
+  to = "/compiler.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 200
+
+[[redirects]]
+  from = "/advertise"
+  to = "/advertise.html"
+  status = 200
+
+# Fallback for 404s
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
